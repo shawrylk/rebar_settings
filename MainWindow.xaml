@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Canvas x:Name="DrawingCanvas" Margin="10">
+            <!-- <Line X1="10" X2="200" Y1="0" Y2="0" StrokeThickness="4" Stroke="Black" StrokeEndLineCap="Round" StrokeStartLineCap="Round" /> -->
+            <Thumb DragDelta="OnDragDelta" Canvas.Left="0" Canvas.Top="0">
+                <Thumb.Template>
+                    <ControlTemplate>
+                        <!-- <Line X1="200" X2="200" Y1="0" Y2="70" StrokeThickness="4" Stroke="Black" StrokeEndLineCap="Round" StrokeStartLineCap="Round" /> -->
+                        <Ellipse Width="10" Height="10" Stroke="Red" Fill="Red"></Ellipse>
+                    </ControlTemplate>
+                </Thumb.Template>
+            </Thumb>
+        </Canvas>
     </Grid>
 </Window>
