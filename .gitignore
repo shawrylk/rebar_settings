@@ -49,5 +49,5 @@ Thumbs.db
 *.wmv
 
 .vs/*
-rebar_settings/obj/*
-rebar_settings/bin/*
+obj/*
+bin/*
